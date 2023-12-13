@@ -1,0 +1,26 @@
+.main {
+}
+
+.control {
+  display: flex;
+  justify-content: space-between;
+  background-color: #acacb35a;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.message {
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.btn {
+  width: 100px;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
