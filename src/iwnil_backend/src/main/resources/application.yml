@@ -1,0 +1,21 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: iwnil-backend
+  data:
+    mongodb:
+      uri: "mongodb://mongodb:mongodb@192.168.0.53:27017/iwnil?authSource=admin"
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: "/api-docs"
+  swagger-ui:
+    enabled: true
+    path: "/swagger-ui"
